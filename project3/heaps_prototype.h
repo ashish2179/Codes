@@ -1,0 +1,17 @@
+int heap();
+int binary_heap();
+int weak_heap();
+int binomial_heap();
+int fibonacci_heap();
+int af_heap();
+int leonardo_heap();
+int h_2_3_heap();
+int soft_heap();
+int pairing_heap();
+int leftlist_heap();
+int treap();
+int beap();
+int skew_heap();
+int ternary_heap();
+int d_ary_heap();
+int brodal_heap();

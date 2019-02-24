@@ -1,0 +1,99 @@
+11:46:31 **** Build of configuration Debug for project bubblesort ****
+make all 
+Building file: ../bubblesort.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bubblesort.d" -MT"bubblesort.o" -o "bubblesort.o" "../bubblesort.c"
+Finished building: ../bubblesort.c
+ 
+Building target: bubblesort
+Invoking: GCC C Linker
+gcc  -o "bubblesort"  ./bubblesort.o   
+/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o: In function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.19/csu/../sysdeps/x86_64/start.S:118: undefined reference to `main'
+makefile:29: recipe for target 'bubblesort' failed
+collect2: error: ld returned 1 exit status
+make: *** [bubblesort] Error 1
+11:48:17 **** Build of configuration Debug for project ashish ****
+make all 
+Building file: ../src/ashish.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ashish.d" -MT"src/ashish.o" -o "src/ashish.o" "../src/ashish.c"
+Finished building: ../src/ashish.c
+ 
+Building target: ashish
+Invoking: GCC C Linker
+gcc  -o "ashish"  ./src/ashish.o   
+Finished building target: ashish
+ 
+11:48:18 **** Incremental Build of configuration Debug for project bubblesort ****
+make all 
+Building target: bubblesort
+Invoking: GCC C Linker
+gcc  -o "bubblesort"  ./bubblesort.o   
+/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o: In function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.19/csu/../sysdeps/x86_64/start.S:118: undefined reference to `main'
+makefile:29: recipe for target 'bubblesort' failed
+collect2: error: ld returned 1 exit status
+make: *** [bubblesort] Error 1
+11:48:20 **** Incremental Build of configuration Debug for project ashish ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:20 **** Incremental Build of configuration Debug for project bubblesort ****
+make all 
+Building target: bubblesort
+Invoking: GCC C Linker
+gcc  -o "bubblesort"  ./bubblesort.o   
+/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o: In function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.19/csu/../sysdeps/x86_64/start.S:118: undefined reference to `main'
+makefile:29: recipe for target 'bubblesort' failed
+collect2: error: ld returned 1 exit status
+make: *** [bubblesort] Error 1
+11:48:27 **** Incremental Build of configuration Debug for project ashish ****
+make all 
+make: Nothing to be done for 'all'.
+11:50:19 **** Incremental Build of configuration Debug for project ashish ****
+make all 
+make: Nothing to be done for 'all'.
+11:50:19 **** Incremental Build of configuration Debug for project bubblesort ****
+make all 
+Building target: bubblesort
+Invoking: GCC C Linker
+gcc  -o "bubblesort"  ./bubblesort.o   
+/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o: In function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.19/csu/../sysdeps/x86_64/start.S:118: undefined reference to `main'
+makefile:29: recipe for target 'bubblesort' failed
+collect2: error: ld returned 1 exit status
+make: *** [bubblesort] Error 1
+11:50:19 **** Build of configuration Debug for project bubblesort1 ****
+make all 
+Building file: ../src/bubblesort1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bubblesort1.d" -MT"src/bubblesort1.o" -o "src/bubblesort1.o" "../src/bubblesort1.c"
+Finished building: ../src/bubblesort1.c
+ 
+Building target: bubblesort1
+Invoking: GCC C Linker
+gcc  -o "bubblesort1"  ./src/bubblesort1.o   
+Finished building target: bubblesort1
+ 
+11:50:35 **** Incremental Build of configuration Debug for project bubblesort1 ****
+make all 
+Building file: ../src/bubblesort1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bubblesort1.d" -MT"src/bubblesort1.o" -o "src/bubblesort1.o" "../src/bubblesort1.c"
+Finished building: ../src/bubblesort1.c
+ 
+Building target: bubblesort1
+Invoking: GCC C Linker
+gcc  -o "bubblesort1"  ./src/bubblesort1.o   
+Finished building target: bubblesort1
+ 
+11:52:46 **** Incremental Build of configuration Debug for project bubblesort1 ****
+make all 
+make: Nothing to be done for 'all'.
+11:56:14 **** Build of configuration Debug for project bubblesort1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:01:15 **** Build of configuration Debug for project bubblesort1 ****
+make all 
+make: Nothing to be done for 'all'.

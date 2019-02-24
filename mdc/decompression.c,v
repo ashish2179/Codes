@@ -1,0 +1,69 @@
+head	1.1;
+access;
+symbols;
+locks
+	root:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.12.19.20.22;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@In this we decompress the data from the compressed data
+The decompressed data is same as the given text file data 
+I firstly compressed data 4 bit so that the decompression is also takes place for the 4 bit data 
+The decompressed data is saved in file decompress.txt
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+int decompression()
+{
+	printf("In %s\n",__func__);
+	int *buff;
+	int n=1,cfd,dfd,i=0,m=1,j=0,efd;
+	char ch,ch1,ec;
+	cfd=open("compress.txt",O_RDWR);
+	efd=open("encrypt.txt",O_RDWR);
+	dfd=open("decompress.txt",O_CREAT|O_RDWR);
+	lseek(cfd,0,SEEK_SET);
+	buff=malloc(sizeof(char)*128);
+	memset(buff,'\0',128);
+	if(!buff)
+	{
+		perror("malloc");
+		goto out;
+	}
+	while(m!=0)
+	{
+		m=read(efd,&ec,1);
+		*(buff+i)=ec;
+		i++;
+	}
+	while(n!=0)
+	{
+		n=read(cfd,&ch,1);
+		ch=(int)ch;
+		ch1=ch;
+		printf("the byte is : %d\n",ch);
+		ch1=ch1>>4;
+		write(dfd,&buff[ch1],1);
+		ch=ch<<4;
+		ch=ch>>4;
+		write(dfd,&buff[ch],1);	
+	}
+	printf("The file is Decompressed in the file 'decompressed.txt'\n");
+out:
+	return 0;
+}
+@

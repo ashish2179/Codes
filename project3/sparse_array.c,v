@@ -1,0 +1,33 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.07;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "array_prototype.h"
+
+int sparse_array()
+{
+	printf("IN %s FUNCTION\n\n",%s);
+	printf("COMING SOON\n\n");
+	return 0;
+}@

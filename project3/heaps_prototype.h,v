@@ -1,0 +1,40 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.43;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int heap();
+int binary_heap();
+int weak_heap();
+int binomial_heap();
+int fibonacci_heap();
+int af_heap();
+int leonardo_heap();
+int h_2_3_heap();
+int soft_heap();
+int pairing_heap();
+int leftlist_heap();
+int treap();
+int beap();
+int skew_heap();
+int ternary_heap();
+int d_ary_heap();
+int brodal_heap();@

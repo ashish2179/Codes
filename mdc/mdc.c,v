@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks
+	root:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.12.19.24.57;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@This is the main Project file MULTIPLE DATA COMPRESSION
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+void main()
+{
+	main_menu();
+}
+@

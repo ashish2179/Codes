@@ -1,0 +1,111 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.58;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "heaps_prototype.h"
+
+int heaps_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with HEAP\n");
+	printf("2 => Do you want to work with BINARY HEAP\n");
+	printf("3 => Do you want to work with WEAK HEAP\n ");
+	printf("4 => Do you want to work with BINOMIAL HEAP\n");
+	printf("5 => Do you want to work with FIBONACCI HEAP\n");
+	printf("6 => Do you want to work with AF-HEAP\n");
+	printf("7 => Do you want to work with LEONARDO HEAP\n");
+	printf("8 => Do you want to work with 2-3 HEAP\n");
+	printf("9 => Do you want to work with SOFT HEAP\n");
+	printf("10 => Do you want to work with PAIRING HEAP\n");
+	printf("11 => Do you want to work with LEFTLIST HEAP\n");
+	printf("12 => Do you want to work with TREAP\n");
+	printf("13 => Do you want to work with BEAP\n");
+	printf("14 => Do you want to work with SKEW HEAP\n");
+	printf("15 => Do you want to work with TERNARY HEAP\n");
+	printf("16 => Do you want to work with D-ARY HEAP\n");
+	printf("17 => Do you want to work with BRODAL HEAP\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:heap();
+			break;
+		case 2:binary_heap();
+			break;
+		case 3:weak_heap();
+			break;
+		case 4:binomial_heap();
+			break;
+		case 5:fibonacci_heap();
+			break;
+		case 6:af_heap();
+			break;
+		case 7:leonardo_heap();
+			break;
+		case 8:h_2_3_heap();
+			break;
+		case 9:soft_heap();
+			break;
+		case 10:pairing_heap();
+			break;
+		case 11:leftlist_heap();
+			break;
+		case 12:treap();
+			break;
+		case 13:beap();
+			break;
+		case 14:skew_heap();
+			break;
+		case 15:ternary_heap();
+			break;
+		case 16:d_ary_heap();
+			break;
+		case 17:brodal_heap();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Heap
+Binary heap
+Weak heap
+Binomial heap
+Fibonacci heap
+AF-heap
+Leonardo Heap
+2-3 heap
+Soft heap
+Pairing heap
+Leftist heap
+Treap
+Beap
+Skew heap
+Ternary heap
+D-ary heap
+Brodal queue
+*/@

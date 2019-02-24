@@ -1,0 +1,127 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.52;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "bin_tree_prototype.h"
+
+int binary_trees_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with AA TREE\n");
+	printf("2 => Do you want to work with AVL TREE\n");
+	printf("3 => Do you want to work with BINARY SEARCH TREE\n ");
+	printf("4 => Do you want to work with BINARY TREE\n");
+	printf("5 => Do you want to work with CARTESIAN TREE\n");
+	printf("6 => Do you want to work with LEFT-CHILD RIGHT-SIBILING TREE\n");
+	printf("7 => Do you want to work with ORDER STATISTIC TREE\n");
+	printf("8 => Do you want to work with PAGODA\n");
+	printf("9 => Do you want to work with RANDOMIZED BINARY SEARCH TREE\n");
+	printf("10 => Do you want to work with RED-BLACK TREE\n");
+	printf("11 => Do you want to work with ROPE\n");
+	printf("12 => Do you want to work with SCAPEGOAT TREE\n");
+	printf("13 => Do you want to work with SELF-BALANCING BINARY SEARCH TREE\n");
+	printf("14 => Do you want to work with SPLAY TREE\n");
+	printf("15 => Do you want to work with T-TREE\n");
+	printf("16 => Do you want to work with TANGO TREE\n");
+	printf("17 => Do you want to work with THREADED BINARY TREE\n");
+	printf("18 => Do you want to work with TOP TREE\n");
+	printf("19 => Do you want to work with TREAP\n");
+	printf("20 => Do you want to work with WAVL TREE\n");
+	printf("21 => Do you want to work with WEIGHT-BALANCED TREE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:aa_tree();
+			break;
+		case 2:avl_tree();
+			break;
+		case 3:binary_search_tree();
+			break;
+		case 4:binary_tree();
+			break;
+		case 5:cartesian_tree();
+			break;
+		case 6:left_child_right_sibiling_tree();
+			break;
+		case 7:order_statistic_tree();
+			break;
+		case 8:pagoda();
+			break;
+		case 9:randomized_binary_search_tree();
+			break;
+		case 10:red_black_tree();
+			break;
+		case 11:rope();
+			break;
+		case 12:scapegoat_tree();
+			break;
+		case 13:self_balancing_binary_search_tree();
+			break;
+		case 14:splay_tree();
+			break;
+		case 15:t_tree();
+			break;
+		case 16:tango_tree();
+			break;
+		case 17:threaded_binary_tree();
+			break;
+		case 18:top_tree();
+			break;
+		case 19:treap();
+			break;
+		case 20:wavl_tree();
+			break;
+		case 20:weight_balanced_tree();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+AA tree
+AVL tree
+Binary search tree
+Binary tree
+Cartesian tree
+Left-child right-sibling binary tree
+Order statistic tree
+Pagoda
+Randomized binary search tree
+Red–black tree
+Rope
+Scapegoat tree
+Self-balancing binary search tree
+Splay tree
+T-tree
+Tango tree
+Threaded binary tree
+Top tree
+Treap
+WAVL tree
+Weight-balanced tree
+*/@

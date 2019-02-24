@@ -1,0 +1,63 @@
+head	1.1;
+access;
+symbols;
+locks
+	root:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.12.19.22.45;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@In this we called each and every function as required in our given MDC(MULTIPLE DATA COMPRESSION) project 
+As the user choose the choice after choosing the choice by user that particuler operation will performed
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+int main_menu()
+{
+	char ch;
+	int n;
+	printf("\t____MAIN MENU____\n");
+	printf("1.Compression\n");
+	printf("2.Decompression\n");
+	printf("3.EXIT\n");
+	printf("Enter your choice:-\n");
+	scanf("%d",&n);
+	while(1)
+	{
+		switch(n)
+		{
+			case 1:
+				compression();
+				break;
+			case 2:
+				decompression();
+				break;
+			case 3: exit(EXIT_SUCCESS);
+				break;
+			default:
+				printf("enter valid choice\n");
+				break;
+		}
+		printf("1.Compression\n");
+		printf("2.Decompression\n");
+		printf("3.EXIT\n");
+		printf("Enter your choice:-\n");
+		scanf("%d",&n);
+	}
+		return 0;
+	}
+
+@

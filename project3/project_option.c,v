@@ -1,0 +1,77 @@
+head	1.2;
+access;
+symbols;
+locks
+	ashish:1.2; strict;
+comment	@ * @;
+
+
+1.2
+date	2017.05.28.04.42.02;	author ashish;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2017.05.28.04.30.05;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@#include "header.h"
+#include "prototype.h"
+
+int project_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with ARRAY data structure\n");
+	printf("2 => Do you want to work with LIST data structure\n");
+	printf("3 => Do you want to work with TREE data structure\n ");
+	printf("4 => Do you want to work with HASH data structure\n");
+	printf("5 => Do you want to work with GRAPH data structure\n");
+	printf("6 => Do you want to work with OTHER data structure not listed here\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	/*switch(choice)
+	{
+		case 1:array_option();
+			break;
+		case 2:list_option();
+			break;
+		case 3:tree_option();
+			break;
+		case 4:hash_option();
+			break;
+		case 5:graph_option();
+			break;
+		case 6:other_option();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}*/
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d17 1
+a17 1
+	switch(choice)
+d33 1
+a33 1
+	}
+@

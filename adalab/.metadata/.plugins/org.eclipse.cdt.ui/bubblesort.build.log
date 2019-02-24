@@ -1,0 +1,13 @@
+11:50:19 **** Incremental Build of configuration Debug for project bubblesort ****
+make all 
+Building target: bubblesort
+Invoking: GCC C Linker
+gcc  -o "bubblesort"  ./bubblesort.o   
+/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o: In function `_start':
+/home/abuild/rpmbuild/BUILD/glibc-2.19/csu/../sysdeps/x86_64/start.S:118: undefined reference to `main'
+makefile:29: recipe for target 'bubblesort' failed
+collect2: error: ld returned 1 exit status
+make: *** [bubblesort] Error 1
+
+11:50:19 Build Finished (took 63ms)
+

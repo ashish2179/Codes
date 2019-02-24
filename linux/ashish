@@ -1,0 +1,10 @@
+Hello world
+my name ashish 
+and i am the student of panjab uiversity regional center hoshira pur 
+PIPE AND REDDIRECTION
+before we get down to the detail of the shell programming,we need to say a little about how input and output of linux programm (not just shell programming )can be redirected.
+REDIRECTION
+you may already be familiar with some redirection ,such as
+$ ls -l | ashish 
+which saves the output of ls command into a file called ashish 
+

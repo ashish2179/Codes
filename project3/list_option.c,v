@@ -1,0 +1,94 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.02;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "list_prototype.h"
+
+int list_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with DOUBLY LINKED LIST\n");
+	printf("2 => Do you want to work with ARRAY LIST\n");
+	printf("3 => Do you want to work with LINKED LIST\n ");
+	printf("4 => Do you want to work with SELF ORGANIZING LIST\n");
+	printf("5 => Do you want to work with SKIP LIST\n");
+	printf("6 => Do you want to work with UNROLLED LINKED LIST\n");
+	printf("7 => Do you want to work with VLIST\n");
+	printf("8 => Do you want to work with CONC-TREE LIST\n");
+	printf("9 => Do you want to work with XOR LINKED LIST\n");
+	printf("10 => Do you want to work with ZIPPER\n");
+	printf("11 => Do you want to work with DOUBLY CONNECTED EDGE LIST\n");
+	printf("12 => Do you want to work with DIFFERENCE LIST\n");
+	printf("13 => Do you want to work with FREE LIST\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:doubly_linked_list();
+			break;
+		case 2:array_list();
+			break;
+		case 3:linked_list();
+			break;
+		case 4:self_organizing_list();
+			break;
+		case 5:skip_list();
+			break;
+		case 6:unrolled_linked_list();
+			break;
+		case 7:vlist();
+			break;
+		case 8:conc_tree_list();
+			break;
+		case 9:xor_linked_list();
+			break;
+		case 10:zipper();
+			break;
+		case 11:doubly_connected_edge_list();
+			break;
+		case 12:difference_list();
+			break;
+		case 13:free_list();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Doubly linked list
+Array list
+Linked list
+Self-organizing list
+Skip list
+Unrolled linked list
+VList
+Conc-Tree list
+Xor linked list
+Zipper
+Doubly connected edge list
+Difference list
+Free list
+*/@

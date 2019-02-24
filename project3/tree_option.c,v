@@ -1,0 +1,71 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.07;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+
+
+int tree_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with BINARY TREES\n");
+	printf("2 => Do you want to work with B-TREES\n");
+	printf("3 => Do you want to work with HEAPS\n ");
+	printf("4 => Do you want to work with TREES\n");
+	printf("5 => Do you want to work with MULTIWAY TREES\n");
+	printf("6 => Do you want to work with SPACE-PARTITIONING TREES\n");
+	printf("7 => Do you want to work with APPLICATION-SPECIFIC TREES\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:binary_trees_option();
+			break;
+		case 2:b_trees_option();
+			break;
+		case 3:heaps_option();
+			break;
+		case 4:trees_option();
+			break;
+		case 5:multiway_trees_option();
+			break;
+		case 6:space_partitioning_trees_option();
+			break;
+		case 7:application_specific_trees_option();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Binary trees
+B-trees
+Heaps
+Trees
+Multiway trees
+Space-partitioning trees
+Application-specific trees
+*/@

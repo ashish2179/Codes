@@ -1,0 +1,99 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.04;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "multi_trees_prototype.h"
+
+int multiway_trees_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1  => Do you want to work with TERNARY TREE\n");
+	printf("2  => Do you want to work with K-ARY TREE\n");
+	printf("3  => Do you want to work with AND-OR TREE\n");
+	printf("4  => Do you want to work with (a,b)-TREE\n");
+	printf("5  => Do you want to work with LINK/CUT TREE\n");
+	printf("6  => Do you want to work with SPQR-TREE\n");
+	printf("7  => Do you want to work with SPAGHETTI STACK\n");
+	printf("8  => Do you want to work with DISJOINT-SET DATA STRUCTURE\n");
+	printf("9  => Do you want to work with FUSION TREE\n");
+	printf("10 => Do you want to work with ENFILADE\n");
+	printf("11 => Do you want to work with EXPONENTIAL TREE\n");
+	printf("12 => Do you want to work with FENWICK TREE\n");
+	printf("13 => Do you want to work with VAN EMDE BOAS TREE\n");
+	printf("14 => Do you want to work with ROSE TREE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:ternary_tree();
+			break;
+		case 2:k_ary_tree();
+			break;
+		case 3:and_or_tree();
+			break;
+		case 4:a_b_tree();
+			break;
+		case 5:link_cut_tree();
+			break;
+		case 6:spqr_tree();
+			break;
+		case 7:spaghetti_stack();
+			break;
+		case 8:disjoint_set_data_structure();
+			break;
+		case 9:fusion_tree();
+			break;
+		case 10:enfilade();
+			break;
+		case 11:exponential_tree();
+			break;
+		case 12:fenwick_tree();
+			break;
+		case 13:van_emde_boas_tree();
+			break;
+		case 14:rose_tree();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Ternary tree
+K-ary tree
+And–or tree
+(a,b)-tree
+Link/cut tree
+SPQR-tree
+Spaghetti stack
+Disjoint-set data structure
+Fusion tree
+Enfilade
+Exponential tree
+Fenwick tree
+Van Emde Boas tree
+Rose tree
+*/@

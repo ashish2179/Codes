@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.47;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int project_option();
+
+int array_option();
+int list_option();
+int tree_option();
+int hash_option();
+int graph_option();
+int other_option();@

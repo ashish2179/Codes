@@ -1,0 +1,47 @@
+head	1.1;
+access;
+symbols;
+locks
+	root:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.12.19.25.30;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@As i mentioned above in create_master array we find the unique character in given file 
+To the finding unique character a proper logic will be used to find those unique character 
+That logic will be written in unique program 
+And the unique is call from the create_masterarray program .
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+void unique(int *buff,char ch)
+{
+	int i=0;
+	for(i=0;i<128;i++)
+	{
+		if ( *(buff+i)=='\0')
+		{
+			*(buff+i)=ch;
+				break;
+		}
+		else
+		{
+			if(*(buff+i)==ch)
+				break;
+		}
+	}
+}
+@

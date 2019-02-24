@@ -1,0 +1,114 @@
+head	1.2;
+access;
+symbols;
+locks
+	root:1.2; strict;
+comment	@ * @;
+
+
+1.2
+date	2016.07.12.19.29.33;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2016.07.12.19.16.18;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@In this we compress the data
+The data is compressed according to distinct number of character 
+And the compressed data will save in file compress.txt 
+The firstly I make only 4 bit compression
+@
+
+
+1.2
+log
+@We change the variable i & k to unsigned
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+int compression()
+{
+	int *buff;
+	int fd,cfd,byt,j=0,n=1,cl;
+	unsigned int i=0,k=0;
+	char c,ch;
+	buff=malloc(sizeof(char)*128);
+	if(!buff)
+	{
+		perror("malloc");
+		goto out;
+	}
+	printf("In %s\n",__func__);
+	j=create_masterarray(buff);
+	cl=codelenth(j);
+	cfd=open("p.txt",O_RDWR);
+	fd=open("compress.txt",O_CREAT|O_RDWR);
+	printf("The codelenth of Distinct character is : %d\n",cl);
+	lseek(cfd,0,SEEK_SET);
+	byt=byt^byt;
+	if(cl==4)
+	{
+		while(n!=0)
+		{
+			byt=byt^byt;
+			n=read(cfd,&ch,1);
+			printf("%c\n",ch);
+			for(i=0;i<j;i++)
+			{	
+				if(ch==*(buff+i))
+				{
+					printf("index = %d\n",i);
+				//	sprintf(&c,"%d",i);
+					c=i;
+					c=(int)c;
+					c=c<<4;
+					printf("c11=%d\n",c);
+					byt=byt|c;
+				}
+			}
+			n=read(cfd,&ch,1);
+			printf("%c\n",ch);
+			for(k=0;k<j;k++)
+			{
+				if(ch==*(buff+k))
+				{
+					printf("index = %d\n",k);
+				//	sprintf(&c,"%d",k);
+					c=k;
+					c=(int)k;
+					c=c<<4;
+					printf("c22=%d\n",c);
+					c=c>>4;
+					printf("c23=%d\n",c);
+					byt=byt|c;
+					k++;
+				}
+			}
+			printf("byte is = %d\n",byt);
+			write(fd,&byt,1);
+		}
+	}
+	printf("COMPRESSION IS COMPLETE \n");
+	printf("COMPRESSED DATA IS SAVED FILE 'compress.txt' \n");
+	return 0;
+out:
+	return -1;
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d6 2
+a7 1
+	int fd,cfd,i=0,byt,j=0,n=1,cl,k;
+@

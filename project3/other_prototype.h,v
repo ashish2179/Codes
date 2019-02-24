@@ -1,0 +1,29 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.45;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int lightmap(); 
+int winged_edge();
+int doubly_connected_edge_list();
+int quad_edge();
+int routing_table();
+int symbol_table();@

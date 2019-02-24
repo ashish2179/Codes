@@ -1,0 +1,87 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.55;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "b_trees_prototype.h"
+
+int b_trees_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with B-TREE\n");
+	printf("2 => Do you want to work with B+ TREE\n");
+	printf("3 => Do you want to work with B*-TREE\n ");
+	printf("4 => Do you want to work with B SHARP TREE\n");
+	printf("5 => Do you want to work with DANCING TREE\n");
+	printf("6 => Do you want to work with 2-3 TREE\n");
+	printf("7 => Do you want to work with 2-3-4 TREE\n");
+	printf("8 => Do you want to work with QUEAP\n");
+	printf("9 => Do you want to work with FUSION TREE\n");
+	printf("10 => Do you want to work with Bx-TREE\n");
+	printf("11 => Do you want to work with ALIST\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:b_tree();
+			break;
+		case 2:b_plus_tree();
+			break;
+		case 3:b_star_tree();
+			break;
+		case 4:b_sharp_tree();
+			break;
+		case 5:dancing_tree();
+			break;
+		case 6:b_2_3_tree();
+			break;
+		case 7:b_2_3_4_tree();
+			break;
+		case 8:queap();
+			break;
+		case 9:fusion_tree();
+			break;
+		case 10:bx_tree();
+			break;
+		case 11:alist();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+B-tree
+B+ tree
+B*-tree
+B sharp tree
+Dancing tree
+2-3 tree
+2-3-4 tree
+Queap
+Fusion tree
+Bx-tree
+AList
+*/@

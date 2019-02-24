@@ -1,0 +1,9 @@
+problem
+
+Show that the worst-case running time of M AX -H EAPIFY on a heap of size n
+is .lg n/. (Hint: For a heap with n nodes, give node values that cause M AX -
+H EAPIFY to be called recursively at every node on a simple path from the root
+down to a leaf.)
+
+solution
+

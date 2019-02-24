@@ -1,0 +1,33 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.06;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "array_prototype.h"
+
+int simple_array()
+{
+	printf("\n\nIN FUNCTION %s\n",__func__);
+	printf("COMMING SOON\n\n")
+}
+@

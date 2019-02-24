@@ -1,0 +1,94 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.57;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "graph_prototype.h"
+
+int graph_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with GRAPH\n");
+	printf("2 => Do you want to work with ADJACENCY LIST\n");
+	printf("3 => Do you want to work with ADJACENCY MATRIX\n");
+	printf("4 => Do you want to work with GRAPH-STRUCTURED STACK\n");
+	printf("5 => Do you want to work with SCENE GRAPH\n");
+	printf("6 => Do you want to work with BINARY DECISION DIAGRAM\n");
+	printf("7 => Do you want to work with ZERO-SUPPRESSED DECISION DIAGRAM\n");
+	printf("8 => Do you want to work with AND-INVERTER GRAPH\n");
+	printf("9 => Do you want to work with DIRECTED GRAPH\n");
+	printf("10 => Do you want to work with DIRECTED ACYCLIC GRAPH\n");
+	printf("11 => Do you want to work with PROPOSITIONAL DIRECTED ACYCLIC GRAPH\n");
+	printf("12 => Do you want to work with MULTIGRAPH\n");
+	printf("13 => Do you want to work with HYPERGRAPH\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:graph();
+			break;
+		case 2:adjacency_list();
+			break;
+		case 3:adjacency_matrix();
+			break;
+		case 4:graph_structured_stack();
+			break;
+		case 5:scene_graph();
+			break;
+		case 6:binary_decision_diagram();
+			break;
+		case 7:zero_suppressed_decision_diagram();
+			break;
+		case 8:and_inverter_graph();
+			break;
+		case 9:directed_graph();
+			break;
+		case 10:directed_acyclic_graph();
+			break;
+		case 11:propositional_directed_acyclic_graph();
+			break;
+		case 12:multigraph();
+			break;
+		case 13:hypergraph();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Graph
+Adjacency list
+Adjacency matrix
+Graph-structured stack
+Scene graph
+Binary decision diagram
+Zero-suppressed decision diagram
+And-inverter graph
+Directed graph
+Directed acyclic graph
+Propositional directed acyclic graph
+Multigraph
+Hypergraph
+*/@

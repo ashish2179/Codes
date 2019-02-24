@@ -1,0 +1,13 @@
+int doubly_linked_list();
+int array_list();
+int linked_list();
+int self_organizing_list();
+int skip_list();
+int unrolled_linked_list();
+int vlist();
+int conc_tree_list();
+int xor_linked_list();
+int zipper();
+int doubly_connected_edge_list();
+int difference_list();
+int free_list();

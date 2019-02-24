@@ -1,0 +1,10 @@
+problem
+
+The code for M AX -H EAPIFY is quite efficient in terms of constant factors, except
+possibly for the recursive call in line 10, which might cause some compilers to
+produce inefficient code. Write an efficient M AX -H EAPIFY that uses an iterative
+control construct (a loop) instead of recursion.
+
+solution
+
+

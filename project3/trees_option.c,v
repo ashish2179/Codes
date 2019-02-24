@@ -1,0 +1,95 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.08;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "trees_prototype.h"
+
+int trees_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with TRIE\n");
+	printf("2 => Do you want to work with RADIX TREE\n");
+	printf("3 => Do you want to work with SUFFIX TREE\n");
+	printf("4 => Do you want to work with SUFFIX ARRAY\n");
+	printf("5 => Do you want to work with COMPRESSED SUFFIX ARRAY\n");
+	printf("6 => Do you want to work with FM-INDEX\n");
+	printf("7 => Do you want to work with GENERALISED SUFFIX TREE\n");
+	printf("8 => Do you want to work with B-TRIE\n");
+	printf("9 => Do you want to work with JUDY ARRAY\n");
+	printf("10 => Do you want to work with X-FAST TRIE\n");
+	printf("11 => Do you want to work with Y-FAST TRIE\n");
+	printf("12 => Do you want to work with MERKLE TREE\n");
+	printf("13 => Do you want to work with CTRIE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:trie();
+			break;
+		case 2:radix_tree();
+			break;
+		case 3:suffix_tree();
+			break;
+		case 4:suffix_array();
+			break;
+		case 5:compressed_suffix_array();
+			break;
+		case 6:fm_index();
+			break;
+		case 7:generalised_suffix_tree();
+			break;
+		case 8:b_trie();
+			break;
+		case 9:judy_array();
+			break;
+		case 10:x_fast_trie();
+			break;
+		case 11:y_fast_trie();
+			break;
+		case 12:merkle_tree();
+			break;
+		case 13:ctrie();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Trie
+Radix tree
+Suffix tree
+Suffix array
+Compressed suffix array
+FM-index
+Generalised suffix tree
+B-trie
+Judy array
+X-fast trie
+Y-fast trie
+Merkle Tree
+Ctrie
+*/@

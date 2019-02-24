@@ -1,0 +1,83 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.51;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "tree_prototype.h"
+#include "app_speci_trees_prototype.h"
+
+int application_specific_trees_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with ABSTRACT SYNTAX TREE\n");
+	printf("2 => Do you want to work with PARSE TREE\n");
+	printf("3 => Do you want to work with DECISION TREE\n");
+	printf("4 => Do you want to work with ALTERNATING DECISION TREE\n");
+	printf("5 => Do you want to work with MINIMAX TREE\n");
+	printf("6 => Do you want to work with EXPECTIMINIMAX TREE\n");
+	printf("7 => Do you want to work with FINGER TREE\n");
+	printf("8 => Do you want to work with EXPRESSION TREE\n");
+	printf("9 => Do you want to work with LOG-STRUCTURED MERGE-TREE\n");
+	printf("10 => Do you want to work with LEXICOGRAPHIC SEARCH TREE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:abstract_syntax_tree();
+			break;
+		case 2:parse_tree();
+			break;
+		case 3:decision_tree();
+			break;
+		case 4:alternating_decision_tree();
+			break;
+		case 5:minimax_tree();
+			break;
+		case 6:expectiminimax_tree();
+			break;
+		case 7:finger_tree();
+			break;
+		case 8:expression_tree();
+			break;
+		case 9:log_structured_merge_tree();
+			break;
+		case 10:lexicographic_search_tree();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Abstract syntax tree
+Parse tree
+Decision tree
+Alternating decision tree
+Minimax tree
+Expectiminimax tree
+Finger tree
+Expression tree
+Log-structured merge-tree
+Lexicographic Search Tree
+*/@

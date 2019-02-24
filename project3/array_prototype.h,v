@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.35;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int simple_array();
+int bit_array();
+int bit_field();
+int bitboard();
+int bitmap();
+int circular_buffer();
+int control_table();
+int image();
+int dope_array();
+int dynamic_array();
+int gap_buffer();
+int hashed_array_tree();
+int heightmap();
+int lookup_table();
+int matrix();
+int parallel_array();
+int sorted_array();
+int sparse_array();
+int iliffe_vector();
+int variable_length_array();
+@

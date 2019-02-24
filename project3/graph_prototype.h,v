@@ -1,0 +1,36 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.40;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int graph();
+int adjacency_list();
+int adjacency_matrix();
+int graph_structured_stack();
+int scene_graph();
+int binary_decision_diagram();
+int zero_suppressed_decision_diagram();
+int and_inverter_graph();
+int directed_graph();
+int directed_acyclic_graph();
+int propositional_directed_acyclic_graph();
+int multigraph();
+int hypergraph();@

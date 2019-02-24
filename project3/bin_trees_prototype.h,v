@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.38;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int aa_tree();
+int avl_tree();
+int binary_search_tree();
+int binary_tree();
+int cartesian_tree();
+int left_child_right_sibiling_tree();
+int order_statistic_tree();
+int pagoda();
+int randomized_binary_search_tree();
+int red_black_tree();
+int rope();
+int scapegoat_tree();
+int self_balancing_binary_search_tree();
+int splay_tree();
+int t_tree();
+int tango_tree();
+int threaded_binary_tree();
+int top_tree();
+int treap();
+int wavl_tree();
+int weight_balanced_tree();@

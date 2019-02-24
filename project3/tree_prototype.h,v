@@ -1,0 +1,30 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.49;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@int binary_trees_option();
+int b_trees_option();
+int heaps_option();
+int trees_option();
+int multiway_trees_option();
+int space_partitioning_trees_option();
+int application_specific_trees_option();@

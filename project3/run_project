@@ -1,0 +1,55 @@
+#! /bin/bash
+#rm compress.txt decompress.txt encrypt.txt
+checkin()
+{
+	for file in $(ls *.h)
+	
+	do
+		ci $file
+	done
+		for file in $(ls *.c)
+	do
+		ci $file
+	done
+}
+checkout()
+{
+		for file in $(ls *.h,v)
+	do
+		co $file
+	done 
+		for file in $(ls *.c,v)
+	do
+		co $file 
+	done
+}
+compile()
+{
+	if (make)
+	then 
+		echo "Make successfull Do you want to test APP Y/N"
+	read response
+		if [ $response = 'y' ]
+		then 
+			./project	
+		else
+			echo "Make failed"
+		fi
+	fi
+} 
+c_o_l()
+{
+		for file in $(ls *.h)
+	do
+		co -l $file
+	done 
+		for file in $(ls *.c)
+	do
+		co -l $file 
+	done
+}
+checkin
+checkout
+c_o_l
+compile
+

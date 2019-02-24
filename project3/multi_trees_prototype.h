@@ -1,0 +1,14 @@
+int ternary_tree();
+int k_ary_tree();
+int and_or_tree();
+int a_b_tree();
+int link_cut_tree();
+int spqr_tree();
+int spaghetti_stack();
+int disjoint_set_data_structure();
+int fusion_tree();
+int enfilade();
+int exponential_tree();
+int fenwick_tree();
+int van_emde_boas_tree();
+int rose_tree();

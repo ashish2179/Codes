@@ -1,0 +1,39 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.05;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "array_prototype.h"
+#include "app_speci_trees_prototype.h"
+#include "bin_trees_prototype.h"
+#include "graph_prototype.h"
+#include "list_prototype.h"
+#include "other_prototype.h"
+#include "space_part_trees_prototype.h"
+#include "trees_prototype.h"
+
+int main()
+{
+	project_option();
+	return 0;
+}@

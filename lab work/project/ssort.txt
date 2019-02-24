@@ -1,0 +1,54 @@
+//selection sort.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int array[10];
+int i,j,n,temp;
+int findmax(int b[10],int k);
+void exchange(int b[10],int k);
+clrscr();
+printf("\nEnter the value of n:");
+scanf("%d",&n);
+printf("\nEnter the elements one by one:");
+for(i=0;i<n;i++)
+{
+scanf("%d",&array[i]);
+}
+printf("\nInput array elements:");
+for(i=0;i<n;i++)
+{
+printf("%d\n",array[i]);
+}
+exchange(array,n);
+printf("\nSorted array is");
+for(i=0;i<n;i++)
+{
+printf("%d\n",array[i]);
+}
+getch();
+}
+int findmax(int b[10],int k)
+{
+int max=0,j;
+for(j=0;j<=k;j++)
+{
+if(b[j]>b[max])
+{
+max=j;
+}
+}
+return (max);
+}
+void exchange(int b[10],int k)
+{
+int temp,big,j;
+for(j=k-1;j>=1;j--)
+{
+big=findmax(b,j);
+temp=b[big];
+b[big]=b[j];
+b[j]=temp;
+}
+return;
+}

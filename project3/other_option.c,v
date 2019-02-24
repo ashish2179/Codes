@@ -1,0 +1,66 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.04;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "other_prototype.h"
+
+int other_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with LIGHTMAP\n");
+	printf("2 => Do you want to work with WINGED EDGE\n");
+	printf("3 => Do you want to work with DOUBLY CONNECTER EDGE LIST\n ");
+	printf("4 => Do you want to work with QUAD-EDGE\n");
+	printf("5 => Do you want to work with ROUTING TABLE\n");
+	printf("6 => Do you want to work with SYMBOL TABLE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:lightmap();
+			break;
+		case 2:winged_edge();
+			break;
+		case 3:doubly_connected_edge_list();
+			break;
+		case 4:quad_edge();
+			break;
+		case 5:routing_table();
+			break;
+		case 6:symbol_table();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Lightmap
+Winged edge
+Doubly connected edge list
+Quad-edge
+Routing table
+Symbol table
+*/@

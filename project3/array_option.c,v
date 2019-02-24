@@ -1,0 +1,123 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.52;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "array_prototype.h"
+
+int array_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with SIMPLE ARRAY\n");
+	printf("2 => Do you want to work with BIT ARRAY\n");
+	printf("3 => Do you want to work with BIT FIELD\n ");
+	printf("4 => Do you want to work with BITBOARD\n");
+	printf("5 => Do you want to work with BITMAP\n");
+	printf("6 => Do you want to work with CIRCULAR BUFFER\n");
+	printf("7 => Do you want to work with CONTROL TABLE\n");
+	printf("8 => Do you want to work with IMAGE\n");
+	printf("9 => Do you want to work with DOPE ARRAY\n");
+	printf("10 => Do you want to work with DYNAMIC ARRAY\n");
+	printf("11 => Do you want to work with GAP BUFFER\n");
+	printf("12 => Do you want to work with HASHED ARRAY TREE\n");
+	printf("13 => Do you want to work with HEIGHTMAP\n");
+	printf("14 => Do you want to work with LOOKUP TABLE\n");
+	printf("15 => Do you want to work with MATRIX\n");
+	printf("16 => Do you want to work with PARALLEL ARRAY\n");
+	printf("17 => Do you want to work with SORTED ARRAY\n");
+	printf("18 => Do you want to work with SPARSE MATRIX\n");
+	printf("19 => Do you want to work with ILIFFE VECTOR\n");
+	printf("20 => Do you want to work with VARIABLE-LENGTH ARRAY\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:simple_array();
+			break;
+		case 2:bit_array();
+			break;
+		case 3:bit_field();
+			break;
+		case 4:bitboard();
+			break;
+		case 5:bitmap();
+			break;
+		case 6:circular_buffer();
+			break;
+		case 7:control_table();
+			break;
+		case 8:image();
+			break;
+		case 9:dope_array();
+			break;
+		case 10:dynamic_array();
+			break;
+		case 11:gap_buffer();
+			break;
+		case 12:hashed_array_tree();
+			break;
+		case 13:heightmap();
+			break;
+		case 14:lookup_table();
+			break;
+		case 15:matrix();
+			break;
+		case 16:parallel_array();
+			break;
+		case 17:sorted_array();
+			break;
+		case 18:sparse_array();
+			break;
+		case 19:iliffe_vector();
+			break;
+		case 20:variable_length_array();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Array
+Bit array
+Bit field
+Bitboard
+Bitmap
+Circular buffer
+Control table
+Image
+Dope vector
+Dynamic array
+Gap buffer
+Hashed array tree
+Heightmap
+Lookup table
+Matrix
+Parallel array
+Sorted array
+Sparse matrix
+Iliffe vector
+Variable-length array
+*/
+@

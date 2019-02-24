@@ -1,0 +1,106 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.29.58;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "hash_prototype.h"
+
+int hash_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1 => Do you want to work with BLOOM FILTER\n");
+	printf("2 => Do you want to work with COUNT-MIN SKETCH\n");
+	printf("3 => Do you want to work with DISTRIBUTED HASH TABLE\n ");
+	printf("4 => Do you want to work with DOUBLE HASHING\n");
+	printf("5 => Do you want to work with DYNAMIC PERFECT HASH TABLE\n");
+	printf("6 => Do you want to work with HASH ARRAY MAPPED TRIE\n");
+	printf("7 => Do you want to work with HASH LIST\n");
+	printf("8 => Do you want to work with HASH TABLE\n");
+	printf("9 => Do you want to work with HASH TREE\n");
+	printf("10 => Do you want to work with HASH TRIE\n");
+	printf("11 => Do you want to work with KOORDE\n");
+	printf("12 => Do you want to work with PREFIX HASH TREE\n");
+	printf("13 => Do you want to work with ROLLING HASH\n");
+	printf("14 => Do you want to work with MINHASH\n");
+	printf("15 => Do you want to work with QUOTIENT FILTER \n");
+	printf("16 => Do you want to work with CTRIE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:bloom_filter();
+			break;
+		case 2:count_min_sketch();
+			break;
+		case 3:distributed_hash_table();
+			break;
+		case 4:double_hashing();
+			break;
+		case 5:dynamic_perfect_hash_table();
+			break;
+		case 6:hash_array_mapped_trie();
+			break;
+		case 7:hash_list();
+			break;
+		case 8:hash_table();
+			break;
+		case 9:hash_tree();
+			break;
+		case 10:hash_trie();
+			break;
+		case 11:koorde();
+			break;
+		case 12:prefix_hash_tree();
+			break;
+		case 13:rolling_hash();
+			break;
+		case 14:minhash();
+			break;
+		case 15:quotient_filter();
+			break;
+		case 16:ctrie();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+Bloom filter
+Count-Min sketch
+Distributed hash table
+Double Hashing
+Dynamic perfect hash table
+Hash array mapped trie
+Hash list
+Hash table
+Hash tree
+Hash trie
+Koorde
+Prefix hash tree
+Rolling hash
+MinHash
+Quotient filter
+Ctrie
+*/@

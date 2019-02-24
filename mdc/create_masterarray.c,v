@@ -1,0 +1,54 @@
+head	1.1;
+access;
+symbols;
+locks
+	root:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.07.12.19.18.34;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@In this we create a masterarray 
+Means a array that contains all distinct character in file 
+The distinct character is find out use the given text file and a proper logic 
+For know more see The the program create_masterarray
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header.h"
+#include"prototypes.h"
+int create_masterarray(int *buff)
+{
+	printf("In %s\n",__func__);	
+        int fd,j,n=1,efd;
+	char ch;
+	memset(buff,'\0',128);
+        fd=open("p.txt",O_RDWR);
+	efd=open("encrypt.txt",O_CREAT|O_RDWR);
+        while(n!=0)
+        {
+        n=read(fd,&ch,1);
+			printf("char1=%c\n",ch);
+        unique(buff,ch);
+        }
+	j=0;
+        for(j=0;*(buff+j)!='\0';j++)
+	{
+		printf("%c\n",*(buff+j));
+		write(efd,&buff[j],1);
+	}
+	close(fd);
+	printf("\nThe number of distinct Character is = %d\n",j);
+return j;
+}
+@

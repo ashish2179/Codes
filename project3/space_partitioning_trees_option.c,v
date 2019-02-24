@@ -1,0 +1,156 @@
+head	1.1;
+access;
+symbols;
+locks
+	ashish:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2017.05.28.04.30.06;	author ashish;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include "header.h"
+#include "prototype.h"
+#include "array_prototype.h"
+#include "space_part_trees_prototype.h"
+
+int array_option()
+{
+	int choice;
+	printf("---------------------------------------------------------------------------------------------------------------");
+	printf("1  => Do you want to work with SEGMENT TREE\n");
+	printf("2  => Do you want to work with INTERVAL TREE\n");
+	printf("3  => Do you want to work with RANGE TREE\n ");
+	printf("4  => Do you want to work with Bin\n");
+	printf("5  => Do you want to work with K-d TREE\n");
+	printf("6  => Do you want to work with IMPLICIT K-d TREE\n");
+	printf("7  => Do you want to work with MIN/MAX K-d TREE\n");
+	printf("8  => Do you want to work with RELAXED K-d TREE\n");
+	printf("9  => Do you want to work with ADAPTIVE K-d TREE\n");
+	printf("10 => Do you want to work with QUADTREE\n");
+	printf("11 => Do you want to work with OCTREE\n");
+	printf("12 => Do you want to work with LINEAR OCTREE\n");
+	printf("13 => Do you want to work with Z-ORDER\n");
+	printf("14 => Do you want to work with UB-TREE\n");
+	printf("15 => Do you want to work with R-TREE\n");
+	printf("16 => Do you want to work with R+ TREE\n");
+	printf("17 => Do you want to work with R* TREE\n");
+	printf("18 => Do you want to work with HILBERT R-TREE\n");
+	printf("19 => Do you want to work with X-TREE\n");
+	printf("20 => Do you want to work with METRIC TREE\n");
+	printf("21 => Do you want to work with COVER TREE\n");
+	printf("22 => Do you want to work with M-TREE\n");
+	printf("23 => Do you want to work with VP-TREE\n ");
+	printf("24 => Do you want to work with BK-TREE\n");
+	printf("25 => Do you want to work with BOUNDING INTERVAL HIERARCHY\n");
+	printf("26 => Do you want to work with BOUNDING VOLUME HIERARCHY\n");
+	printf("27 => Do you want to work with BSP TREE\n");
+	printf("27 => Do you want to work with RAPIDLY EXPLORING RANDAM TREE\n");
+	printf("----------------------------------------------------------------------------------------------------------------");
+	printf("plzz enter your choice\n");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:segment_tree();
+			break;
+		case 2:interval_tree();
+			break;
+		case 3:range_tree();
+			break;
+		case 4:bin();
+			break;
+		case 5:k_d_tree();
+			break;
+		case 6:implicit_k_d_tree();
+			break;
+		case 7:min_max_k_d_tree();
+			break;
+		case 8:relaxed_k_d_tree();
+			break;
+		case 9:adaptive_k_d_tree();
+			break;
+		case 10:quadtree();
+			break;
+		case 11:octree();
+			break;
+		case 12:linear_octree();
+			break;
+		case 13:z_order();
+			break;
+		case 14:ub_tree();
+			break;
+		case 15:r_tree();
+			break;
+		case 16:r_plus_tree();
+			break;
+		case 17:r_star_tree();
+			break;
+		case 18:hilbert_r_tree();
+			break;
+		case 19:x_tree();
+			break;
+		case 20:metric_tree();
+			break;
+		case 21:cover_tree();
+			break;
+		case 22:m_tree();
+			break;
+		case 23:vp_tree();
+			break;
+		case 24:bk_tree();
+			break;
+		case 25:bounding_interval_hierarchy();
+			break;
+		case 26:bounding_volume_hierarchy();
+			break;
+		case 27:bsp_tree();
+			break;
+		case 28:rapidly_exploring_random_tree();
+			break;
+		default:printf("your choice is wrong\nplzz choose valid choice\n");
+			break;
+	}
+}
+/*
+
+Segment tree
+Interval tree
+Range tree
+Bin
+K-d tree
+Implicit k-d tree
+Min/max k-d tree
+Relaxed k-d tree
+Adaptive k-d tree
+Quadtree
+Octree
+Linear octree
+Z-order
+UB-tree
+R-tree
+R+ tree
+R* tree
+Hilbert R-tree
+X-tree
+Metric tree
+Cover tree
+M-tree
+VP-tree
+BK-tree
+Bounding interval hierarchy
+Bounding volume hierarchy
+BSP tree
+Rapidly exploring random tree
+*/@

@@ -1,0 +1,10 @@
+problem 
+
+Starting with the procedure M AX -H EAPIFY , write pseudocode for the procedure
+M IN -H EAPIFY .A; i/, which performs the corresponding manipulation on a min-
+heap. How does the running time of M IN -H EAPIFY compare to that of M AX -
+H EAPIFY ?
+
+solution
+
+
